@@ -30,14 +30,19 @@ layout: base
 {% unless addons %}{% assign addons = "about,newsletter,related,random" | split:"," %}{% endunless %}
 <!-- <script>console.log("{{addons}}"); console.log("{{page.addons}}"); console.l
 og("{{site.hydejack.post_addons}}")</script> -->
+
+{% include components/page-button.html %}
+
 {% for addon in addons %}
+{{addon}}
 {% case addon %}
 {% when 'about' %}
 {% include_cached components/about.html author=page.author %}
 {% when 'related' %}
+123123
 {% include components/related-posts.html %}
 {% when 'comments' %}
-{% include my-comments.html %}
+{% include components/comments.html %}
 {% else %}
 {% endcase %}
 {% endfor %}
