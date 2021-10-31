@@ -30,3 +30,15 @@
     width: 6rem; // inlineflex : Inline(Inline Block) 요소와 같은 성향(수평 쌓임)
     margin-left: -1px;
 }
+
+.markdown-body {
+  kbd {
+    font-size:15px;
+    color : #555;
+    background-color: #fcfcfc;
+    padding: 3px 10px;
+  }
+  mark {
+    background-color: #fff;
+  }
+}
